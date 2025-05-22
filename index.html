@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boz Concept Home</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -38,6 +41,7 @@
       font-size: 2em;
       font-weight: bold;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      text-align: center;
     }
     .section {
       padding: 30px;
@@ -49,10 +53,12 @@
       padding: 10px;
       background: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 200px;
+      width: 90%;
+      max-width: 300px;
     }
     .product img {
       width: 100%;
+      height: auto;
     }
     .btn {
       display: inline-block;
@@ -68,6 +74,22 @@
       padding: 20px;
       background-color: #000;
       color: white;
+    }
+
+    /* Mobil görünüm için medya sorgusu */
+    @media (max-width: 600px) {
+      .product {
+        width: 90%;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .hero {
+        font-size: 1.5em;
+        padding: 0 10px;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -91,14 +113,14 @@
 <div id="urunler" class="section">
   <h2>Öne Çıkan Ürünler</h2>
   <div class="product">
-    <img src="https://cdn.dsmcdn.com/ty123/product/media/your-product1.jpg" alt="Altı Kancalı Banyo Sepeti">
+    <img src="https://cdn.dsmcdn.com/ty1243/product/media/images/20230501/15/332674658/905381430/1/1_org_zoom.jpg" alt="Altı Kancalı Banyo Sepeti">
     <h3>Altı Kancalı Banyo Sepeti</h3>
-    <a class="btn" href="https://www.trendyol.com/boz-concept-home/urun-link">Satın Al</a>
+    <a class="btn" href="https://www.trendyol.com/boz-concept-home/yapiskanli-paslanmaz-6-kancali-super-luks-banyo-duzenleyici-banyo-aksesuar-p-905381430">Satın Al</a>
   </div>
   <div class="product">
-    <img src="https://cdn.dsmcdn.com/ty456/product/media/your-product2.jpg" alt="Tezgah Üstü Raf">
+    <img src="https://cdn.dsmcdn.com/ty1073/product/media/images/prod/SPM/PIM/20231101/09/5fa3e9e4-8de6-36e5-a0b3-44f92b43ae5f/1_org_zoom.jpg" alt="Tezgah Üstü Raf">
     <h3>Tezgah Üstü Raf</h3>
-    <a class="btn" href="https://www.trendyol.com/boz-concept-home/urun-link2">Satın Al</a>
+    <a class="btn" href="https://www.trendyol.com/boz-concept-home/2-katli-siyah-tezgah-ustu-raf-ahsap-tabanli-metal-mutfak-duzenleyici-ve-saklama-p-879973110">Satın Al</a>
   </div>
 </div>
 
